@@ -1,0 +1,42 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <head>
+    </head>
+
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function(){
+            overlay.classList.add('show-menu');
+        });
+    </script>
+<script> 
+
+$(function(){
+  $("#header").load("header.html"); 
+  $("#home").load("home.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+<body>
+
+<!-- get header -->
+<div id="header"></div>
+
+
+<!--page content-->
+<div id="home"></div>
+<!-- page content end -->
+
+
+
+
+
+<!-- get footer -->
+<div id="footer"></div>
+</body>
+</html>
