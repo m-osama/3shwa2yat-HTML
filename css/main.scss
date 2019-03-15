@@ -20,12 +20,20 @@ $colors: (
         @return map-get($colors, $color-name);
     }
 
-    $desktop: 840px;
+    $laptop: 840px;
+    @mixin laptop {
+        @media (min-width: #{$laptop}) {
+            @content;
+        }
+    }
+    $desktop: 1440px;
     @mixin desktop {
         @media (min-width: #{$desktop}) {
             @content;
         }
     }
+
+
     
     
     /*** global ***/
@@ -386,9 +394,13 @@ header{
 #trailer {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1rem;
+    // padding: 1rem;
+    @include laptop {
+        padding: 8rem 15%;
+    }
+
     @include desktop {
-        padding: 8rem 16rem;
+        padding: 8rem 25%;
     }
     .box {
         position: relative;
