@@ -542,6 +542,13 @@ header .menu-btn {
   color: #00B6F1;
 }
 
+/*** services ***/
+#services {
+  background-color: #E1E2E2;
+  padding-bottom: 8rem;
+  padding-top: 5rem;
+}
+
 /*** footer ***/
 footer {
   color: #E1E2E2;
